@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+body {
+	background-color: white;
+}
+.avatar-chip {
+   width: 90%;
+   height: none;
+   display: inline-flex;
+   align-items: center;
+   padding: 5px;
+   cursor: none;
+   border: none;
+   background-color: rgb(0, 0, 0, 0.0);
+   border-radius: 20px;
+   box-shadow: 0 0 4px #666;
+}
+
+.avatar-chip:hover {
+   background-color: #ADE1F5;
+   transition-duration: none;
+  }
+
+.avatar_moega {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #131313;
+    color: white;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 40px;
+    background-image: url("ic_button_moega.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    box-shadow: 0 0 4px #666;
+}
+
+.avatar_virador {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background-image: url("ic_virador.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatar-chip-text {
+   color: black;
+   font-size: 25px;
+}
+.loader {
+  margin-top: 90%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  box-shadow: 0 0 4px #666;
+  border-top: 5px solid #5F00BE;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-inner {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin-inner 120.0s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-1000deg);
+  }
+}
+
+@keyframes spin-inner {
+  100% {
+    transform: rotate(1000deg);
+  }
+}
+</style>
+</head>
+<body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById('loader').style.display = "none";
+    document.getElementById('loadedText').style.display = "block";
+  }, 1000);
+});
+</script>
+
+<center>
+<div class="loader" id="loader">
+  <div class="loader-inner"></div>
+</div>
+<div class="loaded-text" id="loadedText" style="display:none">
+
+<br>
+	</br>
+    <a href="moega.html">
+        <div class="avatar-chip">
+            <div class="avatar_moega"></div>
+            <span class="avatar-chip-text">Moega</span>
+        </div>
+    </a>
+    
+    <br>
+	</br>
+    <a href="virador.html">
+        <div class="avatar-chip">
+            <div class="avatar_virador"></div>
+            <span class="avatar-chip-text">Virador de Latas</span>
+        </div>
+    </a>
+</center>
+
+</div>
+</body>
+</html>

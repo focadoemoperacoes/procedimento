@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+body {
+}
+
+html {
+  user-select: none;
+}
+img {
+width: 100%;
+}
+header {
+  position: fixed;
+  width: 97%;
+  height: 5%;
+  border: 1px solid grey;
+  background-color: rgba(95,0,190, 0.9);
+}
+button {
+  font-size: 10px;
+  position: fixed;
+  margin-left: 2px;
+  margin-top: 7px;
+  width: 20%;
+  height: 3vh;
+  border: none;
+  box-shadow: 1px solid #666;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  transition: transform 1s;
+  transition: left 0.9s;
+}
+
+button:hover {
+   background-color: #DDDDDD;
+   color: black;
+}
+
+.texto_luva {
+  font-size: 15px;
+  font-weight: bold none;
+  text-decoration: underline none;
+  display: inline;
+  float: left;
+  color: none;
+}
+
+.descrever {
+  display: block;
+  text-decoration: none;
+  color: none;
+}
+
+#luva {
+  border: 1px solid #666;
+  display: inline;
+  align: center;
+  width: 29%;
+  height: 20%;
+  background-image: url("luva_hyflex_11-727.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto_protetor {
+  font-size: 15px;
+  font-weight: none;
+  text-decoration: none;
+  margin: 29;
+  display: inline;
+}
+
+#protetor {
+  border: 1px solid #666;
+  width: 32%;
+  height: 20%;
+  background-image: url("protetor_auricular.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto_bota {
+  font-size: 15px;
+  font-weight: none;
+  transform: translate(-20%, -0%);
+  font-size: auto;
+  text-decoration: none;
+  float: right;
+  display: inline;
+}
+
+#bota {
+  border: 1px solid #666;
+  display: inline;
+  width: 37%;
+  height: 20%;
+  background-image: url("bota.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+
+#lata {
+  border: 1px solid #666;
+  width: 97%;
+  height: 20%;
+  background-image: url("latas_virada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+}
+
+#lata_trava {
+  border: 1px solid #666;
+  width: 97%;
+  height: 20%;
+  background-image: url("lata_travou.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#buttonStop {
+  border: 1px solid #666;
+  width: 97%;
+  height: 15%;
+  background-image: url("buttonStop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+}
+#CaixaPerforma {
+  border: 1px solid #666;
+  width: 97%;
+  height: 55%;
+  background-image: url("CaixaPerforma.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#btn {
+  float: right;
+  margin-left: -47%;
+}
+
+.loader {
+  margin-top: 90%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  box-shadow: 0 0 4px #666;
+  border-top: 5px solid #5F00BE;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-inner {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin-inner 120.0s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-1000deg);
+  }
+}
+
+@keyframes spin-inner {
+  100% {
+    transform: rotate(1000deg);
+  }
+}
+</style>
+
+
+
+<center>
+<div class="loader" id="loader">
+  <div class="loader-inner"></div>
+</div>
+<div:center class="loaded-text" id="loadedText" style="display:none">
+	
+<header>
+	
+<div id="action-bar">
+   <button id="btn" onclick="goBack()">Voltar ao início</button>
+   <!-- Adicione mais botões de ação conforme necessário -->
+</div>
+</header>
+	
+<script>
+// Função para retornar à página anterior
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</br>
+
+<p>
+<b>Procedimento para funcionário iniciante no virador de latas:</b>
+<br>
+</br>
+
+<b>1.</b> Antes de iniciar o trabalho, é fundamental que o funcionário receba um treinamento específico sobre o funcionamento do virador de latas e as medidas de segurança a serem seguidas.<br>
+</br>
+
+<b>2.</b> Sempre utilize os Equipamentos de Proteção Individual (EPIs) recomendados para a atividade, como luvas de segurança, protetor auricular e calçados apropriados. Tais como:<br>
+</br>
+
+<b class="texto_luva">Luva Hyflex 11-727</b>
+<b class="texto_protetor">Protetor Auricular</b>
+<b class="texto_bota">Bota de Segurança</b>
+<br>
+</br>
+<img id="luva"/>
+<img id="protetor"/>
+<img id="bota"/>
+<br>
+</br>
+
+<b>3.</b> Se posicione em pontos que às latas sempre estão tombadas para virar às latas.<br>
+</br>
+
+<img id="lata"/>
+<br>
+</br>
+
+<b>4.</b> Observe atentamente o fluxo das latas na esteira, certifique-se de que não há latas obstruindo a passagem na esteira.<br>
+</br>
+
+<img id="lata_trava"/>
+<br>
+</br>
+
+Caso isso aconteça,  acione o <b>Botão de emergência de movimento da esteira</b> para parar a esteira.<br>
+</br>
+
+<img id="buttonStop"/>
+<br>
+</br>
+
+<b>5.</b> Ao finalizar o trabalho, lembre-se de realizar o 5S para manter a organização da área de trabalho. Realize a limpeza do ambiente e recolha as latas que porventura tenham caído durante o processo. Descarte essas latas na <b>caixa de performa</b>.<br>
+</br>
+
+<img id="CaixaPerforma"/>
+<br>
+</br>
+
+Além disso, é importante não deixar o virador de latas sem uma reserva para assumir o seu lugar. Caso perceba que está demorando para a troca de turno, comunique o líder ou operador responsável para garantir a continuidade da operação de forma adequada.<br>
+</br>
+</p>
+<br>
+</br>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById('loader').style.display = "none";
+    document.getElementById('loadedText').style.display = "block";
+  }, 1000);
+});
+</script>
+
+</body>
+</html>

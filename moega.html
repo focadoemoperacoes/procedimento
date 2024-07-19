@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+body {
+}
+
+html {
+  user-select: none;
+}
+img {
+width: 100%;
+}
+div {
+  position: fixed;
+  width: 97%;
+  height: 5%;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px;
+  background-color: rgba(95,0,190, 0.9);
+}
+button {
+  font-size: 10px;
+  position: fixed;
+  margin-left: 2px;
+  margin-top: 7px;
+  width: 20%;
+  height: 3vh;
+  border: none;
+  box-shadow: 1px solid #666;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+}
+
+button:hover {
+   background-color: #DDDDDD;
+   color: black;
+  transition: transform 1s;
+  transition: left 0.9s;
+}
+
+
+.loader {
+  margin-top: 90%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  box-shadow: 0 0 4px #666;
+  border-top: 5px solid #5F00BE;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-inner {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin-inner 120.0s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-1000deg);
+  }
+}
+
+@keyframes spin-inner {
+  100% {
+    transform: rotate(1000deg);
+  }
+}
+</style>
+
+
+<center>
+<div class="loader" id="loader">
+  <div class="loader-inner"></div>
+</div>
+<div class="loaded-text" id="loadedText" style="display:none">
+	
+<header>
+<div id="action-bar">
+   <button onclick="goBack()">VOLTAR AO INÍCIO</button>
+   <!-- Adicione mais botões de ação conforme necessário -->
+</div>
+</header>
+
+<script>
+// Função para retornar à página anterior
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+<br>
+</br>
+
+<br>
+</br>
+
+<p>
+<b>Procedimento Moega</b>
+<br>
+</br>
+
+Ao iniciar seu turno sempre checar às ruas observando quantos bags foram deixados pelo turno anterior
+</p>
+<br>
+</br>
+</center>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById('loader').style.display = "none";
+    document.getElementById('loadedText').style.display = "block";
+  }, 1000);
+});
+</script>
+</body>
+</html>
