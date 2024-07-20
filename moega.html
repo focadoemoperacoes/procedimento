@@ -43,49 +43,11 @@ button:hover {
    color: black;
   transition: transform 1s;
   transition: left 0.9s;
-}
-
-
-.loader {
-  margin-top: 90%;
-  width: 50px;
-  height: 50px;
-  border: 5px solid white;
-  box-shadow: 0 0 4px #666;
-  border-top: 5px solid #5F00BE;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-.loader-inner {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-top: 5px solid transparent;
-  border-radius: 50%;
-  animation: spin-inner 120.0s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(-1000deg);
-  }
-}
-
-@keyframes spin-inner {
-  100% {
-    transform: rotate(1000deg);
   }
 }
 </style>
 
 
-<center>
-<div class="loader" id="loader">
-  <div class="loader-inner"></div>
-</div>
-<div class="loaded-text" id="loadedText" style="display:none">
-	
 <header>
 <div id="action-bar">
    <button onclick="goBack()">VOLTAR AO INÍCIO</button>
@@ -116,15 +78,5 @@ Ao iniciar seu turno sempre checar às ruas observando quantos bags foram deixad
 </p>
 <br>
 </br>
-</center>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-    document.getElementById('loader').style.display = "none";
-    document.getElementById('loadedText').style.display = "block";
-  }, 1000);
-});
-</script>
 </body>
 </html>
